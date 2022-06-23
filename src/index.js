@@ -4,7 +4,7 @@ function displayEverything(){
     getCharacter()
     fetchCharacters()
 }
-
+//get Morty as the default display
 function getCharacter(){
     fetch('https://rickandmortyapi.com/api/character/2')
     .then(response => response.json())
@@ -15,7 +15,7 @@ function getCharacter(){
     .catch(err => console.error(err));
 
 }
-
+//Card display
 function handleDisplay(obj){
     const main =document.querySelector('main')
     main.innerHTML=`
@@ -46,7 +46,7 @@ function handleDisplay(obj){
           })
 }
 
-
+//Gets all charcters
 function fetchCharacters(){    
     fetch('https://rickandmortyapi.com/api/character')
         .then(response => response.json())
@@ -55,7 +55,7 @@ function fetchCharacters(){
             console.log(response.results)})
         .catch(err => console.error(err));
 }
-
+//Side bar display
 function navCharacters(characters){
     const ul=document.querySelector('.nav');
     ul.remove();
@@ -75,7 +75,7 @@ function navCharacters(characters){
     });
 }
 
-
+//Comment form
 function handleForm(){
     document.querySelector('#comment-form').addEventListener('submit',(e)=>{
         const li=document.createElement('li')
@@ -92,7 +92,7 @@ function handleForm(){
     })
 }
 
-
+//Delete a comment
 function deleteTask(e){
     e.target.parentNode.remove();//Deletes the task
   }
