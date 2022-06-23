@@ -91,3 +91,9 @@ function handleForm(){
      document.querySelector('#comment-form').reset(' ')
     })
 }
+
+
+function deleteTask(e){
+    e.target.parentNode.remove();//Deletes the task
+  }
+
