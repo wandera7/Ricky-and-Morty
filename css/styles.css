@@ -79,3 +79,53 @@ ul li:hover {
     background-color: #263238;
 }
   
+
+/*--Card Styling*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;    
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 40px;
+    border-radius: 60px;   
+         
+}
+    
+.title {
+    color: grey;
+    font-size: 18px;
+    font-family: 'Nuosu SIL', serif;
+}
+    
+.like{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color:#37474F;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-bottom-left-radius: 55px;
+    border-bottom-right-radius:55px ;
+      
+}   
+img{
+      border-radius: 20%;
+ }
+.location{
+    font-family: 'Nuosu SIL', serif;
+    letter-spacing:0.1rem;
+  
+}
+  
+button:hover{
+    background-color:indianred;
+}
+  
+  
+.likes{
+    font-weight: bolder;
+}
