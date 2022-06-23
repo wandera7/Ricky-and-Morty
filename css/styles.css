@@ -137,7 +137,7 @@ button:hover{
     margin-top: 30px;
     margin-left: 35%;
   }
-  #comment-list li {
+#comment-list li {
     background-color: #37474F;
     border-radius: 5px;
     padding: 20px;
@@ -146,12 +146,12 @@ button:hover{
     margin-left:35%;
     letter-spacing: 0.1rem;
     
-  }
-  h3{
+}
+h3{
      font-family:  'Nuosu SIL', serif; 
-  }
+}
   
-  .delete {
+.delete {
     position: relative;
     float: right;
     margin-right: 10px;    
@@ -160,4 +160,4 @@ button:hover{
     height: 36px;
     cursor: pointer;
     outline: none;
-  } 
+} 
