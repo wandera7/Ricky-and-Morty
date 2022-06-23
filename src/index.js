@@ -45,3 +45,13 @@ function handleDisplay(obj){
          document.querySelector("#likes").innerHTML=count
           })
 }
+
+
+function fetchCharacters(){    
+    fetch('https://rickandmortyapi.com/api/character')
+        .then(response => response.json())
+        .then(response => {
+            navCharacters(response.results)            
+            console.log(response.results)})
+        .catch(err => console.error(err));
+}
