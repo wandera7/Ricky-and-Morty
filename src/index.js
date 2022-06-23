@@ -55,3 +55,22 @@ function fetchCharacters(){
             console.log(response.results)})
         .catch(err => console.error(err));
 }
+
+function navCharacters(characters){
+    const ul=document.querySelector('.nav');
+    ul.remove();
+    characters.forEach((character) => {
+        const ul=document.createElement('ul');
+        ul.innerHTML=`
+        <ul class='nav'>
+        <li>${character.name}</li>
+        </ul>
+        `
+      //To be able to change the display
+      document.querySelector('nav').appendChild(ul);
+      ul.addEventListener('click',()=>{
+         console.log('clicked')
+         handleDisplay(character)
+      })  
+    });
+}
