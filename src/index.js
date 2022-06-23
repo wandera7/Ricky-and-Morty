@@ -74,3 +74,20 @@ function navCharacters(characters){
       })  
     });
 }
+
+
+function handleForm(){
+    document.querySelector('#comment-form').addEventListener('submit',(e)=>{
+        const li=document.createElement('li')
+        let btn=document.createElement('button');
+        btn.classList.add("delete")
+        btn.textContent='X';
+        e.preventDefault()
+        btn.addEventListener('click',deleteTask)
+        let value =document.querySelector('#review').value
+        li.innerHTML=`${value}`
+        document.querySelector('#comment-list').appendChild(li)
+        li.appendChild(btn)
+     document.querySelector('#comment-form').reset(' ')
+    })
+}
